@@ -1,17 +1,34 @@
-# Projeto SQL VidaFit – Mayra Mickely
 
-Este repositório contém os scripts SQL utilizados na Experiência Prática de Banco de Dados.
+# Projeto SQL VidaFit
 
-## Arquivos incluídos
-- 01_create_tables.sql
-- 02_insert_data.sql
-- 03_select_queries.sql
-- 04_update_delete.sql
+Este repositório contém scripts SQL e uma página estática para documentar um mini-mundo de academia/treino usado para práticas de DML.
+
+## Conteúdo
+- `01_create_tables.sql` — Criação das tabelas (PostgreSQL)
+- `02_insert_data.sql` — Inserts de exemplo para povoar o banco
+- `03_select_queries.sql` — Consultas com JOIN, WHERE, ORDER BY, LIMIT
+- `04_update_delete.sql` — Comandos UPDATE e DELETE com condições
+- Páginas estáticas para GitHub Pages
 
 ## Como executar
-1. Rode o script 01
-2. Depois o script 02
-3. Utilize os demais conforme necessidade
+1. Criar o banco (psql):
+```bash
+createdb vida_fit
+psql -d vida_fit -f 01_create_tables.sql
+psql -d vida_fit -f 02_insert_data.sql
+```
+2. Testar as consultas:
+```bash
+psql -d vida_fit -f 03_select_queries.sql
+```
+3. Aplicar operações de manutenção:
+```bash
+psql -d vida_fit -f 04_update_delete.sql
+```
 
-## Autora
-Mayra Mickely
+## Requisitos
+- PostgreSQL 12+
+- pgAdmin ou psql
+
+## Licença
+MIT

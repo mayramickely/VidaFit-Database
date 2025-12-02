@@ -1,24 +1,33 @@
 
-<!DOCTYPE html><html lang='pt-BR'><head>
-<meta charset='UTF-8'><title>Instruções</title>
-<link rel='stylesheet' href='assets/style.css'></head><body>
-
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><title>Instruções</title><link rel="stylesheet" href="assets/style.css"></head>
+<body data-theme="light">
 <header><h1>Instruções do Projeto</h1></header>
 <nav>
-<a href='index.html'>Início</a>
-<a href='scripts.html'>Scripts SQL</a>
-<a href='instrucoes.html'>Instruções</a>
-<a href='contato.html'>Contato</a>
+  <a href="index.html">Início</a>
+  <a href="scripts.html">Scripts</a>
+  <a href="instrucoes.html">Instruções</a>
+  <a href="contato.html">Contato</a>
 </nav>
+<div class="container">
+  <section class="card">
+    <h2>Requisitos</h2>
+    <ul>
+      <li>PostgreSQL 12+ (pgAdmin ou psql)</li>
+      <li>Ambiente para executar scripts SQL</li>
+    </ul>
 
-<section>
-<h2>Como executar</h2>
-<ol>
-<li>Execute o script <code>01_create_tables.sql</code></li>
-<li>Depois rode <code>02_insert_data.sql</code></li>
-<li>Use os demais conforme necessidade</li>
-</ol>
-</section>
+    <h3>Execução (exemplo com psql)</h3>
+    <pre><code>psql -U seu_usuario -d vida_fit -f 01_create_tables.sql
+psql -U seu_usuario -d vida_fit -f 02_insert_data.sql</code></pre>
 
-<footer>VidaFit © 2025</footer>
-</body></html>
+    <h3>Boa prática</h3>
+    <p>Execute os scripts em ordem e valide integridade. Use controle de versão (Git) para fazer commits frequentes.</p>
+  </section>
+
+  <footer>VidaFit © 2025</footer>
+</div>
+<script src="assets/script.js"></script>
+</body>
+</html>

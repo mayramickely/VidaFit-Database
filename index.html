@@ -1,21 +1,76 @@
 
-<!DOCTYPE html><html lang='pt-BR'><head>
-<meta charset='UTF-8'><title>VidaFit – Início</title>
-<link rel='stylesheet' href='assets/style.css'>
-</head><body>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VidaFit – Projeto SQL</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-theme="light">
+<header>
+  <div class="brand">
+    <img src="assets/img/logo.svg" alt="VidaFit logo" class="logo">
+    <div>
+      <h1 style="margin:0">Projeto SQL VidaFit</h1>
+      <div class="small">Implementação, DML e versionamento — Mayra Mickely</div>
+    </div>
+  </div>
+  <div>
+    <button id="themeToggle" class="toggle">Modo Escuro</button>
+  </div>
+</header>
 
-<header><h1>Projeto SQL VidaFit</h1></header>
 <nav>
-<a href='index.html'>Início</a>
-<a href='scripts.html'>Scripts SQL</a>
-<a href='instrucoes.html'>Instruções</a>
-<a href='contato.html'>Contato</a>
+  <a href="index.html">Início</a>
+  <a href="scripts.html">Scripts</a>
+  <a href="instrucoes.html">Instruções</a>
+  <a href="contato.html">Contato</a>
+  <a href="README.md" target="_blank">README</a>
 </nav>
 
-<section>
-<h2>Bem-vindo ao Projeto SQL VidaFit</h2>
-<p>Este site reúne toda a documentação e scripts utilizados no projeto prático de Banco de Dados.</p>
-</section>
+<div class="container">
+  <section class="card">
+    <div class="cards-header">
+      <h2>Resumo do Projeto</h2>
+      <span class="small">2025 • VidaFit-Database</span>
+    </div>
+    <p>Este projeto demonstra criação e manipulação de dados em um banco relacional usando SQL (PostgreSQL). Inclui scripts para criação de esquema, povoamento, consultas e operações de atualização/remoção.</p>
+  </section>
 
-<footer>VidaFit © 2025</footer>
-</body></html>
+  <div class="grid">
+    <section class="card">
+      <h3>O que entregamos</h3>
+      <ul class="clean">
+        <li>Site estático pronto para GitHub Pages</li>
+        <li>Scripts SQL reais: CREATE, INSERT, SELECT, UPDATE, DELETE</li>
+        <li>README com instruções e versão para PostgreSQL (pgAdmin)</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3>Arquivos</h3>
+      <ul>
+        <li><a href="01_create_tables.sql">01_create_tables.sql</a></li>
+        <li><a href="02_insert_data.sql">02_insert_data.sql</a></li>
+        <li><a href="03_select_queries.sql">03_select_queries.sql</a></li>
+        <li><a href="04_update_delete.sql">04_update_delete.sql</a></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3>Como usar</h3>
+      <ol>
+        <li>Abra o pgAdmin ou psql</li>
+        <li>Execute em ordem: <code>01_create_tables.sql</code> → <code>02_insert_data.sql</code></li>
+        <li>Rode as consultas e experimente UPDATE/DELETE do script 04</li>
+      </ol>
+    </section>
+  </div>
+
+  <footer>VidaFit © 2025 — Contato: mickelyp@gmail.com</footer>
+</div>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

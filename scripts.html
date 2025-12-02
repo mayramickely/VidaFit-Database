@@ -1,25 +1,38 @@
 
-<!DOCTYPE html><html lang='pt-BR'><head>
-<meta charset='UTF-8'><title>Scripts SQL</title>
-<link rel='stylesheet' href='assets/style.css'></head><body>
-
-<header><h1>Scripts SQL</h1></header>
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><title>Scripts SQL</title><link rel="stylesheet" href="assets/style.css"></head>
+<body data-theme="light">
+<header><div style="display:flex;align-items:center;gap:12px"><img src="assets/img/logo.svg" style="height:36px"/><h1 style="margin:0">Scripts SQL</h1></div></header>
 <nav>
-<a href='index.html'>Início</a>
-<a href='scripts.html'>Scripts SQL</a>
-<a href='instrucoes.html'>Instruções</a>
-<a href='contato.html'>Contato</a>
+  <a href="index.html">Início</a>
+  <a href="scripts.html">Scripts</a>
+  <a href="instrucoes.html">Instruções</a>
+  <a href="contato.html">Contato</a>
 </nav>
+<div class="container">
+  <section class="card">
+    <h2>Download rápido</h2>
+    <p>Baixe os scripts individuais ou veja abaixo os trechos principais.</p>
+    <ul>
+      <li><a href="01_create_tables.sql">01_create_tables.sql</a></li>
+      <li><a href="02_insert_data.sql">02_insert_data.sql</a></li>
+      <li><a href="03_select_queries.sql">03_select_queries.sql</a></li>
+      <li><a href="04_update_delete.sql">04_update_delete.sql</a></li>
+    </ul>
+  </section>
 
-<section>
-<h2>Arquivos Disponíveis</h2>
-<ul>
-<li>01_create_tables.sql</li>
-<li>02_insert_data.sql</li>
-<li>03_select_queries.sql</li>
-<li>04_update_delete.sql</li>
-</ul>
-</section>
+  <section class="card">
+    <h3>Exemplo: criação de tabela users</h3>
+    <pre><code>CREATE TABLE users (
+ id SERIAL PRIMARY KEY,
+ name VARCHAR(100) NOT NULL,
+ email VARCHAR(150) UNIQUE NOT NULL
+);</code></pre>
+  </section>
 
-<footer>VidaFit © 2025</footer>
-</body></html>
+  <footer>VidaFit © 2025</footer>
+</div>
+<script src="assets/script.js"></script>
+</body>
+</html>
