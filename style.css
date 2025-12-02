@@ -1,0 +1,10 @@
+
+body { font-family: Arial; margin:0; padding:0; background:#f4f4f4; }
+header { background:#007BFF; color:white; padding:20px; text-align:center; }
+nav { background:#005FCC; padding:10px; text-align:center; }
+nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
+nav a:hover { text-decoration:underline; }
+section { background:white; max-width:900px; margin:30px auto; padding:30px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+h1, h2 { color:#007BFF; }
+footer { text-align:center; padding:20px; color:#555; }
+code { background:#eee; padding:4px; border-radius:4px; }
